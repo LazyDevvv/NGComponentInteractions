@@ -6,6 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { ParentChildModule } from './parent-child/parent-child.module';
 import { ChildToParentModule } from './child-to-parent/child-to-parent.module';
+import { SharedServiceModule } from './shared-service/shared-service.module';
 
 @NgModule({
   declarations: [AppComponent, ToolbarComponent],
@@ -14,6 +15,7 @@ import { ChildToParentModule } from './child-to-parent/child-to-parent.module';
     AppRoutingModule,
     ParentChildModule,
     ChildToParentModule,
+    SharedServiceModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

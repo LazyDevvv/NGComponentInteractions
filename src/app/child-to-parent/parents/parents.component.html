@@ -16,7 +16,9 @@
       </div>
   </div>
   <br>
-
 </div>
 <br>
-<app-children (sendMessages)="receiveMessagesHandler($event)" (sendArrayOfObject)="receiveArrayOfObjectHandler($event)"></app-children>
+<app-children
+  (sendMessages)="receiveMessagesHandler($event)"
+  (sendArrayOfObject)="receiveArrayOfObjectHandler($event)">
+</app-children>
