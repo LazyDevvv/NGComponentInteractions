@@ -1,0 +1,12 @@
+<div class="card parent">
+  <div class="card-body">
+    <h5 class="card-title"><strong>Parent</strong></h5>
+    <p class="card-text">This is Parent component</p>
+    <button type="button" class="btn btn-warning" (click)="sendMessages()">Send messages to child</button><br><br>
+    <button type="button" class="btn btn-warning" (click)="sendArrayOfObject()">Send Array Of Object</button><br><br>
+    <span>This messages from child component :</span>
+    <br>
+  </div>
+</div>
+<br>
+<app-child [message]="messages" [family]="familyCollections"></app-child>

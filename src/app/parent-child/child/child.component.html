@@ -1,0 +1,17 @@
+<div class="card child">
+  <div class="card-body">
+    <h5 class="card-title">Child</h5>
+    <p class="card-text">This is Child component </p>
+    <br>
+    <span>Messages :</span>
+    <h6><strong>{{message}}</strong></h6>
+
+    <br>
+    <span>Array of Objects :</span>
+    <div>
+        <li *ngFor="let f of family;">
+          <span><strong>{{f.name}}</strong></span>
+        </li>
+    </div>
+  </div>
+</div>
