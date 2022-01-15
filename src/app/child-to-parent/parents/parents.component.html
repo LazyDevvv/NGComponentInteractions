@@ -2,11 +2,21 @@
   <div class="card-body">
     <h5 class="card-title"><strong>Parent</strong></h5>
     <p class="card-text">This is Parent component</p>
-    <button type="button" class="btn btn-warning">Send messages to child</button><br><br>
-    <button type="button" class="btn btn-success">Send Object to child</button><br><br>
-    <span>This messages from child component :</span>
+    <span>Messages :</span>
     <br>
+    <span>
+      {{receivedMessages}}
+    </span><br><br>
+      <span>Receive Array of Objects:</span>
+      <br>
+      <div>
+        <li *ngFor="let f of receivedArrayOfObject;">
+          <span><strong>{{f.name}}</strong></span>
+        </li>
+      </div>
   </div>
+  <br>
+
 </div>
 <br>
-<app-children></app-children>
+<app-children (sendMessages)="receiveMessagesHandler($event)" (sendArrayOfObject)="receiveArrayOfObjectHandler($event)"></app-children>

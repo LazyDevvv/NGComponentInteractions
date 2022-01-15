@@ -6,11 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./parent.component.scss'],
 })
 export class ParentComponent implements OnInit {
+
   messages!: string;
   words: string = 'this messages is from parent component';
 
   familyCollections = [{}];
-  
+
   family = [
     { name: 'Mulyono Putra', age: '27', address: 'Sukabumi' },
     { name: 'Annisya', age: '20', address: 'Sukabumi' },
@@ -19,7 +20,9 @@ export class ParentComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.table(this.family);
+  }
 
   sendMessages() {
     this.messages = this.words;
